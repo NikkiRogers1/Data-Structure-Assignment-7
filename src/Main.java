@@ -10,5 +10,11 @@ public static void main(String[] args) {
 
    System.out.println("Tree height: " + archive.height());
 
+
+    System.out.print("In-order traversal:");
+    archive.inOrderTraversal();
+    System.out.print("\nPre-order traversal:");
+    archive.preOrderTraversal();
+
 }
 }

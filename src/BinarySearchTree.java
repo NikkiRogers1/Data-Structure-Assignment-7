@@ -29,4 +29,27 @@ private int recHeight(BSTNode<T> node) {
     int rightHeight = recHeight(node.getRight());
     return Math.max(leftHeight, rightHeight) + 1;
 }
+
+public void inOrderTraversal() {
+    recInOrderTraversal(root);
+}
+private void recInOrderTraversal(BSTNode<T> node) {
+    if (node != null) {
+        recInOrderTraversal(node.getLeft());
+        System.out.print(node.getInfo() + " ");
+        recInOrderTraversal(node.getRight());
+    }
+}
+public void preOrderTraversal() {
+    recPreOrderTraversal(root);
+
+}
+private void recPreOrderTraversal(BSTNode<T> node) {
+    if (node != null) {
+        System.out.print(node.getInfo() + " ");
+        recPreOrderTraversal(node.getLeft());
+        recPreOrderTraversal(node.getRight());
+    }
+}
+
 }
