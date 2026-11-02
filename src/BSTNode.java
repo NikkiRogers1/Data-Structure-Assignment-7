@@ -1,0 +1,35 @@
+public class BSTNode<T> {
+ private T info;
+ private BSTNode<T> left;
+ private BSTNode<T> right;
+
+ public BSTNode(T info) {
+    this.info = info;
+    this.left = null;
+    this.right= null;
+ }
+ 
+ public T getInfo(){
+    return info;
+ }
+    
+public BSTNode<T> getLeft() {
+   return left;
+}
+
+public BSTNode<T> getRight(){
+   return right;
+}
+
+public void setLeft(BSTNode<T> left) {
+   this.left = left;
+}
+public void setRight(BSTNode<T> right) {
+   this.right = right;
+}
+
+public void setInfo(T info) {
+   this.info = info;
+}
+
+}
