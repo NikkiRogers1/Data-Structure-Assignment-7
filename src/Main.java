@@ -8,5 +8,7 @@ public static void main(String[] args) {
    }
    System.out.println("Archive initialized with sample ID's.");
 
+   System.out.println("Tree height: " + archive.height());
+
 }
 }

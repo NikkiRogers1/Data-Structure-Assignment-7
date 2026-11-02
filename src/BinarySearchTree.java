@@ -18,4 +18,15 @@ private BSTNode<T> recAdd(T element, BSTNode<T> node){
     return node;
 }
 
+public int height() {
+    return recHeight(root);
+}
+private int recHeight(BSTNode<T> node) {
+    if (node == null) {
+        return -1;
+    }
+    int leftHeight = recHeight(node.getLeft());
+    int rightHeight = recHeight(node.getRight());
+    return Math.max(leftHeight, rightHeight) + 1;
+}
 }
